@@ -5,6 +5,12 @@ Este repositorio contiene una aplicación web para gestionar una librería. Perm
 
 ## Requisitos Previos
 - Node.js instalado en el sistema.
+- Express: El marco de aplicación web de Node.js.
+- Body-parser: Un middleware que analiza los cuerpos de las solicitudes entrantes en una cadena de texto.
+- EJS: Un motor de plantillas para generar HTML con JavaScript.
+- Path: Un módulo de Node.js para trabajar con rutas de archivos y directorios.
+- FS: Un módulo de Node.js para interactuar con el sistema de archivos.
+- Nodemon: Herramienta de desarrollo que automáticamente reinicia el servidor cuando detecta cambios en los archivos.
 
 ## Instalación
 1. Clonar este repositorio en su máquina local.
