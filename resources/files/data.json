@@ -1,0 +1,58 @@
+{
+  "books": {
+    "3873744783": {
+      "id": "3873744783",
+      "name": "El señor de los anillos",
+      "pages": 400,
+      "status": "available"
+    },
+    "9780061120084": {
+      "id": "9780061120084",
+      "name": "To Kill a Mockingbird",
+      "pages": 336,
+      "status": "available"
+    },
+    "9780140283334": {
+      "id": "9780140283334",
+      "name": "1984",
+      "pages": 328,
+      "status": "available"
+    },
+    "9780544003415": {
+      "id": "9780544003415",
+      "name": "The Hobbit",
+      "pages": 304,
+      "status": "available"
+    },
+    "9780062315007": {
+      "id": "9780062315007",
+      "name": "The Catcher in the Rye",
+      "pages": 240,
+      "status": "available"
+    },
+    "9780374528379": {
+      "id": "9780374528379",
+      "name": "One Hundred Years of Solitude",
+      "pages": 417,
+      "status": "available"
+    },
+    "9781400079988": {
+      "id": "9781400079988",
+      "name": "The Kite Runner",
+      "pages": 400,
+      "status": "available"
+    },
+    "9780060935467": {
+      "id": "9780060935467",
+      "name": "Fahrenheit 451",
+      "pages": 249,
+      "status": "available"
+    },
+    "9780446310789": {
+      "id": "9780446310789",
+      "name": "To Kill a Mockingbird",
+      "pages": 336,
+      "status": "available"
+    }
+  }
+}

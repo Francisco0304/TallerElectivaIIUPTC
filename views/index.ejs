@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('./templates/header.ejs')%>
+    <body>
+        <div class="container">
+            <h1>Lista de Libros</h1>
+            <% if (Object.keys(data).length > 0) { %>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Páginas</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (const id in data) { %>
+                    <tr>
+                        <td><%= data[id].id %></td>
+                        <td><%= data[id].name %></td>
+                        <td><%= data[id].pages %></td>
+                        <td><%= data[id].status %></td>
+                        <td>
+                            <a href="/edit-book/<%= data[id].id %>" class="btn btn-primary">Editar</a>
+                            <% if (data[id].status === 'available') { %>
+                                <a href="/loan-book/<%= data[id].id %>" class="btn btn-success">Realizar Préstamo</a>
+                            <% } else if (data[id].status === 'unavailable') { %>
+                                <a href="/return-book/<%= data[id].id %>" class="btn btn-warning">Devolver Libro</a>
+                            <% } %>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <a href="/add-book" class="btn-primary btn">Nuevo Libro</a>
+            <a href="/delete-book" class="btn btn-danger">Eliminar Libro</a> <!-- Nuevo botón -->
+            <% } else { %>
+            <h2>No hay libros disponibles</h2>
+            <a href="/add-book" class="btn-primary btn">Nuevo Libro</a>
+            <% } %>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
